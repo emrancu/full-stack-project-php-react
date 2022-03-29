@@ -8,7 +8,7 @@ use AwesomePHP\Bootstrap\System\ViewHandler;
 class RouteServiceProvider implements ServiceProvider{
 
 	public function boot() {
-		 return view('home/index.php', ['name' => "AL EMRAN"]);
+		require_once app()->path('routes/routes.php');
 	}
 
 }
